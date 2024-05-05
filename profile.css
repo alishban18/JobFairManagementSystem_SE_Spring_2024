@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Use the full viewport height */
+  display: flex; /* Use flexbox for vertical centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 20px;
+  background-color:none;
+  margin-bottom:108%;
+}
+
+.navbar li {
+  display: inline;
+  margin-right: 12px;
+}
+
+.navbar li a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  color: cyan;
+}
+
+.container {
+  width: 50%;
+  max-width: 500px;
+  padding: 20px;
+  border: 2px solid cyan;
+  border-radius: 5px;
+  background-color: transparent; /* Optional: Add a semi-transparent background color to make the form more readable */
+  position: relative;
+  margin-right:30%;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.hidden {
+  display: none;
+}
+
+.error {
+  color: red;
+}

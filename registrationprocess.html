@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Fair Registration</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+    <div class="registration-container">
+        <h2>Job Fair Registration</h2>
+        <form id="registration-form">
+            <div class="form-group">
+                <label for="company-name">Company Name:</label>
+                <input type="text" id="company-name" name="company-name" required>
+            </div>
+            <div class="form-group">
+                <label for="contact-name">Contact Name:</label>
+                <input type="text" id="contact-name" name="contact-name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="participation-option">Participation Option:</label>
+                <select id="participation-option" name="participation-option" required>
+                    <option value="">Select Option</option>
+                    <option value="booth">Booth</option>
+                    <option value="online">Online</option>
+                </select>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+ <nav>
+        <ul>
+            <li><a href="login.html">Homepage</a></li>
+           
+            <li><a href="eventinfo.html">Eventinformation</a></li>
+            
+        </ul>
+    </nav>
+    </div>
+    <script src="registrationprocess.js"></script>
+</body>
+</html>

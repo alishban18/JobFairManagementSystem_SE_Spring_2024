@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.background {
+    background-image: url('bg.jpg'); /* Add the URL of your background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: calc(100vh - 0px); /* Adjusted height to leave space at the top */
+    padding-top: 100px; /* Add padding to create space at the top */
+  padding-bottom: 100px; /* Add padding to fill space at the bottom */
+  }
+
+
+.container {
+    max-width: 360px; /* Adjust width as needed */
+    margin: 80px auto; /* Adjust top margin for vertical centering */
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid cyan;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    display: block;
+    width: auto; /* Adjust width automatically based on content */
+    padding: 8px 20px; /* Adjust padding to make it smaller */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 auto; /* Center the button horizontally */
+    font-size: 14px; /* Adjust font size to make it smaller */
+}
+
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.success-message {
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+

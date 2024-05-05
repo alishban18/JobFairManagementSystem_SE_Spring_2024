@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Profile Management</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+  <nav>
+    <ul class="navbar">
+      <li><a href="#">Homepage</a></li>
+      <li><a href="#">Signup/Login</a></li>
+      <li><a href="#">Registration</a></li>
+      <li><a href="#">StudentProfile</a></li>
+      <li><a href="#">JobApplication</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2>Student Profile</h2>
+    <form id="profileForm">
+      <label for="education">Education:</label>
+      <textarea id="education" name="education" rows="4" required></textarea>
+      <label for="skills">Skills:</label>
+      <textarea id="skills" name="skills" rows="4" required></textarea>
+      <label for="experience">Work Experience:</label>
+      <textarea id="experience" name="experience" rows="4" required></textarea>
+      <div id="errorMessages"></div>
+      <button type="submit">Save Changes</button>
+    </form>
+    <div id="notification" class="hidden">
+      <p>Profile updated successfully.</p>
+    </div>
+  </div>
+
+  <script src="profile.js"></script>
+</body>
+</html>

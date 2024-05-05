@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.background {
+  background-image: url('bg.jpg'); /* Add the URL of your background image */
+  background-size: cover; /* Cover the entire background */
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Use the full viewport height */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+
+
+.background {
+    background-image: url('bg.jpg'); /* Add the URL of your background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: calc(100vh - 0px); /* Adjusted height to leave space at the top */
+    padding-top: 100px; /* Add padding to create space at the top */
+  padding-bottom: 100px; /* Add padding to fill space at the bottom */
+  }
+  
+
+.container {
+    margin-top: 100px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px; /* Adjust the font size of h1 */
+    margin-top: 20px;
+}
+
+p {
+    font-size: 28px; /* Adjust the font size of p */
+}
+
+.btn-group {
+    margin-top: 60px; /* Add space above the button group */
+}
+
+.btn {
+    margin-right: 10px; /* Add space between the buttons */
+}
