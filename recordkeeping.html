@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participating Student's Record</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #666;
+        }
+        input[type="text"], input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .message {
+            text-align: center;
+            margin-top: 10px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Participating Student Record</h1>
+        <form id="recordForm">
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" name="studentName" required>
+            <label for="interviewDate">Interview Date:</label>
+            <input type="date" id="interviewDate" name="interviewDate" required>
+            <label for="selectionStatus">Selection Status:</label>
+            <select id="selectionStatus" name="selectionStatus">
+                <option value="selected">Selected</option>
+                <option value="rejected">Rejected</option>
+            </select>
+            <label for="interviewResult">Interview Result:</label>
+            <input type="text" id="interviewResult" name="interviewResult" required>
+            <input type="submit" value="Record">
+        </form>
+        <div class="message" id="message"></div>
+    </div>
+
+    <!-- Script for form submission handling -->
+    <script>
+        src="recordkeeping.js"
+    </script>
+</body>
+</html>

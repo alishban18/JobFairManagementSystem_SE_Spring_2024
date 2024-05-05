@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Search and Filtering</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .search-form {
+            margin-bottom: 20px;
+        }
+        .search-form label {
+            font-weight: bold;
+        }
+        .search-form input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        .search-form select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        .search-form button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+        .search-results {
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        .candidate-profile {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .candidate-profile h3 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Search and Filtering</h1>
+        <div class="search-form">
+            <label for="keywords">Keywords:</label>
+            <input type="text" id="keywords" name="keywords" placeholder="Enter keywords...">
+            <label for="industry">Industry:</label>
+            <select id="industry" name="industry">
+                <option value="">Select Industry</option>
+                <option value="it">IT</option>
+                <option value="finance">Finance</option>
+                <option value="healthcare">Healthcare</option>
+                <!-- Add more options as needed -->
+            </select>
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" placeholder="Enter location...">
+            <button type="button">Search</button>
+        </div>
+        <div class="search-results">
+            <div class="candidate-profile">
+                <h3>John Doe</h3>
+                <p>Education: Bachelor's in Computer Science</p>
+                <p>Experience: 5 years</p>
+                <!-- Add more details as needed -->
+                <button>Contact</button>
+            </div>
+<nav>
+        <ul>
+            <li><a href="login.html">Homepage</a></li>
+            <li><a href="profiledatabase.html">Access to Student Profile Database</a></li>
+            <li><a href="eventinfo.html">Eventinformation</a></li>
+             <li><a href="backup.html">Backup and recovery</a></li>
+             <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+            <!-- More candidate profiles can be added dynamically -->
+        </div>
+    </div>
+    <script> src = "resumesearch.js" </script>
+</body>
+</html>
