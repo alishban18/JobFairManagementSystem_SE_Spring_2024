@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Details Management</title>
+<link rel="stylesheet" href="eventdetail.css">
+</head>
+<body>
+
+<div class="header">
+  <h1>Event Details Management</h1>
+</div>
+
+<div class="container">
+  <h2>Upload and Manage Event Details</h2>
+  <form id="eventForm" enctype="multipart/form-data">
+    <div class="form-group">
+      <label for="company">Participating Companies:</label>
+      <input type="text" id="company" name="company" required>
+    </div>
+    <div class="form-group">
+      <label for="speaker">Keynote Speaker:</label>
+      <input type="text" id="speaker" name="speaker" required>
+    </div>
+    <div class="form-group">
+      <label for="workshop">Workshops:</label>
+      <input type="text" id="workshop" name="workshop" required>
+    </div>
+    <div class="form-group">
+      <label for="session">Networking Sessions:</label>
+      <input type="text" id="session" name="session" required>
+    </div>
+    <div class="form-group">
+      <label for="image">Upload Event Image:</label>
+      <input type="file" id="image" name="image" accept="image/*" required>
+    </div>
+    <button type="submit">Upload Event Details</button>
+  </form>
+</div>
+
+<script src="eventdetail.js"></script>
+</body>
+</html>

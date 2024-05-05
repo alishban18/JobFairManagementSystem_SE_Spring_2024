@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruiter Feedback Form</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Recruiter Feedback Form</h2>
+        <form id="feedback-form">
+            <div class="form-group">
+                <label for="student-name">Student Name:</label>
+                <input type="text" id="student-name" name="student-name" required>
+            </div>
+            <div class="form-group">
+                <label for="strengths">Strengths:</label>
+                <textarea id="strengths" name="strengths" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="areas-for-improvement">Areas for Improvement:</label>
+                <textarea id="areas-for-improvement" name="areas-for-improvement" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="overall-impression">Overall Impression:</label>
+                <select id="overall-impression" name="overall-impression" required>
+                    <option value="">Select</option>
+                    <option value="excellent">Excellent</option>
+                    <option value="good">Good</option>
+                    <option value="average">Average</option>
+                    <option value="below-average">Below Average</option>
+                </select>
+            </div>
+            <button type="submit">Submit Feedback</button>
+<nav>
+        <ul>
+            <li><a href="login.html">Homepage</a></li>
+             <li><a href="resumesearch.html">Search Student by Resume</a></li>
+            <li><a href="profiledatabase.html">Access to Student Profile Database</a></li>
+            <li><a href="eventinfo.html">Eventinformation</a></li>
+             <li><a href="backup.html">Backup and recovery</a></li>
+             
+        </ul>
+    </nav>
+        </form>
+    </div>
+    <script src="feedback.js"></script>
+</body>
+</html>

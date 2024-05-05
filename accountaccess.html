@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Account Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #666;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .message {
+            text-align: center;
+            margin-top: 10px;
+            color: green;
+        }
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>User Account Management</h1>
+        <form id="userActionForm">
+            <label for="action">Select Action:</label>
+            <select id="action" name="action">
+                <option value="add">Add User Account</option>
+                <option value="edit">Edit User Account Details</option>
+                <option value="remove">Remove User Account</option>
+            </select>
+            <div id="addUserFields" style="display: none;">
+                <h2> Adding a User Account</h2>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <input type="submit" value="Add User">
+            </div>
+            <div id="editUserFields" style="display: none;">
+                <h2> Editing User Account Details</h2>
+                <label for="editUsername">Username:</label>
+                <input type="text" id="editUsername" name="editUsername" required>
+                <label for="newPassword">New Password:</label>
+                <input type="password" id="newPassword" name="newPassword">
+                <input type="submit" value="Save Changes">
+            </div>
+            <div id="removeUserFields" style="display: none;">
+                <h2> Removing a User Account</h2>
+                <label for="removeUsername">Username:</label>
+                <input type="text" id="removeUsername" name="removeUsername" required>
+                <input type="submit" value="Remove User">
+            </div>
+        </form>
+        <div class="message" id="message"></div>
+    </div>
+
+    <!-- Script for form submission handling -->
+    <script src="accountaccess.js"></script>
+
+</body>
+</html>

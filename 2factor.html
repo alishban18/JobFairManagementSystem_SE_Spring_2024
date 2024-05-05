@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enable Two-Factor Authentication</title>
+    <link rel="stylesheet" href="2factor.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Enable Two-Factor Authentication</h2>
+        <div class="security-settings">
+            <h3>Security Settings</h3>
+            <p>Choose your preferred two-factor authentication method:</p>
+            <form id="2fa-form">
+                <label>
+                    <input type="radio" name="2fa-method" value="sms">
+                    SMS
+                </label>
+                <label>
+                    <input type="radio" name="2fa-method" value="email">
+                    Email
+                </label>
+                <button type="submit">Enable 2FA</button>
+            </form>
+            <div id="confirmation-message" class="hidden">
+                <p>Two-factor authentication has been successfully activated!</p>
+                <p>Please follow the instructions sent to your chosen method to complete the setup.</p>
+            </div>
+        </div>
+    </div>
+    <script src="2factor.js"></script>
+</body>
+</html>
